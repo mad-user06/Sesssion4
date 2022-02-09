@@ -1,18 +1,90 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="@color/purpledrak">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="67dp"
+        android:layout_height="67dp"
+        android:onClick="clickToObsugden"
+        android:layout_marginLeft="43dp"
+        android:layout_marginTop="30dp"
+        app:srcCompat="@drawable/circl" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="67dp"
+        android:layout_height="67dp"
+        android:onClick="clickToPodbor"
+        android:layout_marginLeft="125dp"
+        android:layout_marginTop="30dp"
+        app:srcCompat="@drawable/circl" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="67dp"
+        android:onClick="clickToIzbran"
+        android:layout_height="67dp"
+        android:layout_marginLeft="43dp"
+        android:layout_marginTop="123dp"
+        app:srcCompat="@drawable/circl" />
 
     <TextView
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_below="@id/imageView2"
+        android:layout_marginLeft="35dp"
+        android:text="Обсуждение"
+        android:textColor="@color/white"
+        android:textSize="14dp" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:id="@+id/textView2"
+        android:textColor="@color/white"
+        android:textSize="14dp"
+        android:layout_marginLeft="130dp"
+        android:layout_below="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Подборки" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView4"
+        android:layout_marginLeft="46dp"
+        android:text="Избранное"
+        android:textColor="@color/white"
+        android:textSize="14dp" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_marginLeft="63dp"
+        android:layout_marginTop="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/smms" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_marginLeft="146dp"
+        android:layout_marginTop="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/kvadrat" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_marginLeft="62dp"
+        android:layout_marginTop="145dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/heart" />
+</RelativeLayout>
